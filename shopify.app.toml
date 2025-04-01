@@ -1,0 +1,36 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "8ed87d5553d77bcfa7dc3d54b4aa6266"
+application_url = "https://few-databases-born-aj.trycloudflare.com"
+embedded = true
+name = "embedded-app-wishlist"
+handle = "embedded-app-wishlist"
+
+[build]
+include_config_on_deploy = true
+automatically_update_urls_on_dev = true
+
+[webhooks]
+api_version = "2025-01"
+
+  [[webhooks.subscriptions]]
+  topics = [ "app/uninstalled" ]
+  uri = "/webhooks/app/uninstalled"
+
+  [[webhooks.subscriptions]]
+  topics = [ "app/scopes_update" ]
+  uri = "/webhooks/app/scopes_update"
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://few-databases-born-aj.trycloudflare.com/auth/callback",
+  "https://few-databases-born-aj.trycloudflare.com/auth/shopify/callback",
+  "https://few-databases-born-aj.trycloudflare.com/api/auth/callback"
+]
+
+[pos]
+embedded = false
