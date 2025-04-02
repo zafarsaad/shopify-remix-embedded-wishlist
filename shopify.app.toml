@@ -1,7 +1,7 @@
 # Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
 
 client_id = "8ed87d5553d77bcfa7dc3d54b4aa6266"
-application_url = "https://few-databases-born-aj.trycloudflare.com"
+application_url = "https://serious-collecting-she-rangers.trycloudflare.com"
 embedded = true
 name = "embedded-app-wishlist"
 handle = "embedded-app-wishlist"
@@ -27,9 +27,9 @@ scopes = "write_products"
 
 [auth]
 redirect_urls = [
-  "https://few-databases-born-aj.trycloudflare.com/auth/callback",
-  "https://few-databases-born-aj.trycloudflare.com/auth/shopify/callback",
-  "https://few-databases-born-aj.trycloudflare.com/api/auth/callback"
+  "https://serious-collecting-she-rangers.trycloudflare.com/auth/callback",
+  "https://serious-collecting-she-rangers.trycloudflare.com/auth/shopify/callback",
+  "https://serious-collecting-she-rangers.trycloudflare.com/api/auth/callback"
 ]
 
 [pos]
